@@ -16,7 +16,7 @@ public class PedidoTest {
         //then
         double total = pedido.subTotal();
         double esperado = 0.0;
-        //verify 10.0001 == 10.0002
+        //verify 1000.0001 == 1000.0002
         assertEquals(esperado,total, 0.001);
     }
     @Test
