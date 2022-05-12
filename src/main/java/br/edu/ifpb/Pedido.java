@@ -11,12 +11,9 @@ import java.util.List;
  */
 public class Pedido {
     private final List<Item> itens = new ArrayList<>();
-    private final LocalDate criadoEm;
-    public Pedido(LocalDate criadoEm) {
-        this.criadoEm = criadoEm;
-    }
+    private final LocalDate criadoEm = LocalDate.now();
     double total() {
-        return 0;
+        return 0.0;
     }
     public double calcularTaxas() {
         return 0.0;
@@ -28,14 +25,11 @@ public class Pedido {
 //            if("comida".equals(item.categoria())){
 //                taxas +=   item.preco() * 0.1;
 //            }
-//            if("bebida".equals(item.categoria())){
-//                taxas +=  0.0; //sem taxas
-//            }
 //        }
 //        return taxas;
     }
     double subTotal() {
-        return 0;
+        return 0.0;
     }
     void adicionar(Item item) {
        this.itens.add(item);

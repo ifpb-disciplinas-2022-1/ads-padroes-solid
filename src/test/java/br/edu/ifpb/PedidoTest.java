@@ -8,9 +8,7 @@ public class PedidoTest {
     @Test
     public void testCalcularValorSubTotal() {
         //given
-        Pedido pedido = new Pedido(
-            LocalDate.now()
-        );
+        Pedido pedido = new Pedido();
 //        pedido.adicionar(new Item("eletrônico", "celular", 550.00));
 //        pedido.adicionar(new Item("eletrônico", "tv", 450.00));
         //then
@@ -23,15 +21,15 @@ public class PedidoTest {
     public void testCalcularTaxas() {
     }
     @Test
-    public void testCalcularValorTotal() {
+    public void testCalcularValorTotal() { //SRP
     }
     @Test
-    public void testCalcularValorComBebida() {
+    public void testCalcularValorComBebida() { //OCP
     }
     @Test
-    public void testCalcularValorComTaxas() {
+    public void testCalcularValorComTaxas() { //ISP + LSP
     }
     @Test
-    public void testCalcularValorTotalBlackFriday() {
+    public void testCalcularValorTotalBlackFriday() { //DIP
     }
 }
