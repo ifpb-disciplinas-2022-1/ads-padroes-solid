@@ -12,7 +12,7 @@ Para executarmos o código precisamos realizar o clone do projeto. Posteriorment
 
 ## Roteiro de estudos
 
-Temos um roteiro de apoio para revisar os conteúdos apresentados. Neste [roteiro](https://diogomoreira.gitbook.io/padroes-de-projeto/principios-solid/introducao) temos **cinco** princípios que após serem implementados tornam nossos códigos mais coesos e com menor acoplamento.
+Temos um roteiro de apoio para revisar os conteúdos apresentados. Neste [roteiro](https://drive.google.com/file/d/1KjI8litN1oZ27l98PUywJdse9aYPV2LQ/view) temos **cinco** princípios que após serem implementados tornam nossos códigos mais coesos e com menor acoplamento.
 
 O **roteiro apresentado em nosso encontro** foi planejado com base nos seguintes materiais:
 * [Material base](https://diogomoreira.gitbook.io/padroes-de-projeto/principios-solid/introducao)
