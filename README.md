@@ -4,6 +4,8 @@
 
 *[Encontro 1 - Conceitos Básicos ](https://github.com/ifpb-disciplinas-2022-1/ads-padroes-solid/commit/f1afde880117f153d93ca4398031263d1e5557f7)*
 
+*[Encontro 2 - Aula Prática ](https://github.com/ifpb-disciplinas-2022-1/ads-padroes-solid/commit/04c1b5e8de1bf41a8870f429b72d13af11e613f6)*
+
 
 ## Executando o projeto
 
