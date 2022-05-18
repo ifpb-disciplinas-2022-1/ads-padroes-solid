@@ -11,25 +11,26 @@ import java.util.List;
  */
 public class Pedido {
     private final List<Item> itens = new ArrayList<>();
-    private final LocalDate criadoEm = LocalDate.now();
+    private final LocalDate criadoEm;
+    public Pedido(){
+        this(LocalDate.now());
+    }
+    public Pedido(LocalDate date) {
+        this.criadoEm = date;
+    }
     double total() {
-        return 0.0;
+        return subTotal() + calcularTaxas();
     }
     public double calcularTaxas() {
-        return 0.0;
-//        double taxas = 0.0;
-//        for (Item item: itens) {
-//            if("eletrônico".equals(item.categoria())){
-//                taxas +=  item.preco() * 0.2;
-//            }
-//            if("comida".equals(item.categoria())){
-//                taxas +=   item.preco() * 0.1;
-//            }
-//        }
-//        return taxas;
+        return itens.stream()
+                .map(CalculaTaxas::new)
+                .mapToDouble(item -> item.calcular(criadoEm))
+                .sum();
     }
     double subTotal() {
-        return 0.0;
+        return this.itens.stream()
+                .mapToDouble(Item::preco)
+                .sum();
     }
     void adicionar(Item item) {
        this.itens.add(item);

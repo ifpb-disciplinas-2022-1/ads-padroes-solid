@@ -5,7 +5,7 @@ package br.edu.ifpb;
  * @mail ricardo.job@ifpb.edu.br
  * @since 12/05/2022, 08:39:48
  */
-public class Item {
+public abstract class Item {
     private final String categoria;
     private final String produto;
     private final double preco;
@@ -14,10 +14,13 @@ public class Item {
         this.produto = produto;
         this.categoria = categoria;
     }
+//    public abstract double taxas();
     public double preco(){
         return this.preco;
     }
     public String categoria() {
         return this.categoria;
     }
+
+
 }
